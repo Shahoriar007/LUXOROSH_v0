@@ -1,0 +1,580 @@
+------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Luxorosh
+Version:    1.0
+Last change:    3/7/19 [fixed Float bug, vf]
+Author Name: Md Shahoriar Fahim
+Primary use:    Practice
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    Font family
+==========================================
+*/
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+
+
+/*=========font starts===========*/
+@font-face {
+   font-family: SF Pro Display;
+   src: url('../fonts/FontsFree-Net-SFProDisplay-Light.ttf');
+}
+
+@font-face {
+   font-family: SF Pro Displayt;
+   src: url('../fonts/FontsFree-Net-SFProDisplay-Medium.ttf');
+   font-weight: bold;
+}
+
+* {
+   font-family: SF Pro Display;
+}
+/*======font end=======*/
+
+
+
+
+/*
+==========================================
+    Start Header
+==========================================
+*/
+
+/*============ navbar start========= */
+html ,
+body {
+    height: 100%;
+}
+
+.header-main {
+    position: absolute;
+    z-index: 99;
+    width:100%;
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000;
+    height: 90px;
+    transition: 0.6s;
+}
+
+.header-main::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    left: 0;
+    z-index: -1;
+    opacity: .49;
+    background: #393838;
+    top: 0;
+}
+
+
+nav.mane-menu ul {
+    float: right;
+        padding: 5px 5px 5px 380px;
+}
+
+nav.mane-menu ul li {
+    float: left;
+    margin-left: 26px;
+}
+
+nav.mane-menu ul li a {
+    text-transform: uppercase;
+    padding:24px 0px;
+    font-family: 'SF Pro Display' ;
+    text-decoration: none;
+    color: #caac76;
+    display: inline-block;
+    /*font-weight: 500;*/
+    transition: .3s;
+}
+
+nav.mane-menu ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*===logo===*/
+.logo img {
+    vertical-align: middle;
+    border-style: none;
+    height: 65px;
+}
+
+
+/*============ navbar end========= */
+
+/*============ Header Image Starts ========= */
+
+
+.header-img {
+    /* background: url(../Image/header.jpg); */
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    height: 800px;
+    z-index: 0;
+}
+
+
+/*============ Header Image End ========= */
+
+
+/*============ Header Content Starts ========= */
+
+.header-img .container ,
+.header-img .row ,
+.header-img .col-md-12 {
+    height: 100%;
+}
+
+.d-table {
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.d-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.header-content {
+    color: #fff;
+    margin-top: 95px;
+    text-align: left;
+}
+
+.header-content h1 {
+    font-family: 'SF Pro Display';
+    font-size: 61px;
+    padding-top: 270px;
+    color: #caac76;
+}
+
+/*============ Header Content End ========= */
+
+
+
+/*============= About Starts ==============*/
+.text-center{
+    text-align: center!important;
+}
+
+/* =========Section Name ========*/
+.section-header h2 {
+    padding: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content {
+    background-color: #000;
+    color: #fff;
+    height: 650px;
+}
+.slider_padding{
+    padding: 0px 5px 0px 200px;
+}
+
+.about {
+    font-family: 'SF Pro Display';
+    font-size: x-large;
+    padding: 25px;
+}
+/*=========About Section Slider========*/
+.slideshow{
+        width:500px;
+        height:360px;
+        margin:10px;
+        overflow:hidden;
+
+    }
+        .slideshow li{
+            list-style:none;
+            float:left;
+            display:inline;
+            position:relative;
+
+        }
+
+/*============= About Ends ==============*/
+
+
+
+
+/*=========Block Section Starts==========*/
+
+.row.sHW {
+    height: 650px;
+}
+
+
+
+.back_col{
+    /* background: url(../img/LW.jpg); */
+    z-index: 1;
+    transition: 2s;
+}
+.back_col::before{
+    content: '';
+    position: absolute;
+    height: 650px;
+    width: 955px;
+    transition: 2s;
+    opacity: 0.9;
+    z-index: 10;
+}
+.back_col:hover::before{
+    background-color: black;
+}
+
+.p_l {
+    position: absolute;
+    font-family: 'SF Pro Display';
+    font-size: xx-large;
+    color: white;
+    z-index: 99;
+    opacity: 0.6;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+.p_l:hover{
+    color: white;
+    opacity: 1;
+}
+.p_lp {
+    position: absolute;
+    top: 280px;
+    font-family: 'SF Pro Display';
+    font-size: x-large;
+    color: #caac76;
+    z-index: 99;
+    opacity: 0.6;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+.p_lp:hover{
+    color: #caac76;
+    opacity: 1;
+}
+
+
+
+
+
+.back_col_2{
+    /* background: url(../img/header.jpg); */
+    z-index: 1;
+    transition: 2s;
+}
+.back_col_2::after{
+    content: '';
+    position: absolute;
+    height: 650px;
+    width: 955px;
+    transition: 2s;
+    opacity: 0.4;
+    z-index: 10;
+}
+.back_col_2:hover::after{
+    background-color: #fff;
+}
+.p_l_2 {
+    position: absolute;
+    font-family: 'SF Pro Display';
+    font-size: xx-large;
+    color: #000;
+    z-index: 99;
+    opacity: 0.6;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+.p_l_2:hover{
+    color: #000;
+    opacity: 1;
+}
+.p_lp_2 {
+    position: absolute;
+    top: 150px;
+    font-family: 'SF Pro Display';
+    font-size: x-large;
+    color: black;
+    z-index: 99;
+    opacity: 0.6;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+.p_lp_2:hover{
+    color: black;
+    opacity: 1;
+}
+
+.col-md-6{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+
+
+/*=========Block Section Ends==========*/
+
+
+
+/*=========button  starts=========*/
+.button {
+  position: absolute;
+  top: 375px;
+  left: 38px;
+  z-index: 99;
+  border-radius: 4px;
+  background: transparent;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.button span:after {
+  content: '\00bb';
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*===========button  ends==============*/
+
+
+
+
+/*===========Blog Item Starts==========*/
+
+/*===========Blog Item Button Starts==========*/
+
+.blog-item-button {
+    /* height: 30px; */
+    /* width: 100px; */
+    /* border: 1px solid #000; */
+    border: none;
+    font-size: 16px;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+    color: #fff;
+    /* text-transform: uppercase; */
+    background: #000000;
+}
+
+.blog-item-button:hover{
+    background: white;
+    color: #000;
+}
+
+/*===Blog Item Button Ends===*/
+
+
+.blog-content {
+    font-family: 'Roboto', serif;
+}
+.blog-item_1 {
+    width: 85%;
+    padding: 10px;
+    transition: 0.6s;
+}
+.blog-item_2 {
+    width: 85%;
+    padding: 10px;
+    transition: 0.6s;
+}
+.blog-item_3 {
+    width: 85%;
+    padding: 10px;
+    transition: 0.6s;
+}
+
+.blog-item:hover {
+    box-shadow: 3px 3px 41px #000000;
+    transition: 0.6s;
+}
+.blog-item_1 img {
+    width: 230px;
+    height: 500px;
+}
+.blog-item_2 img {
+    width: 515px;
+    height: 240px;
+}
+.blog-item_3 img {
+    width: 230px;
+    height: 500px;
+}
+.blog-item h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.blog-item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+
+.date {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #e83f35;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+/*===========Blog Item Ends==========*/
+
+
+
+/*===========Footer Starts==========*/
+.footer_color{
+  background-color: #1b1b1b;
+  height: 330px;
+  color: #fff;
+  text-align: center;
+}
+
+.col-xl h4 {
+    color: #999;
+    font-size: medium;
+    text-align: start;
+    padding: 55px 0px 5px;
+}
+
+.col-xl a {
+    color: #e8e8e8;
+    font-family: 'Raleway' ;
+    text-decoration: none;
+    display: -webkit-box;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+/*===icon color===*/
+.fa-facebook-f:hover{
+  color: #3B5998;
+}
+.fa-instagram:hover{
+  color: #8134AF;
+}
+.fa-youtube:hover{
+  color: #dc3434;
+}
+.fa-twitter:hover{
+  color: #38A1F3;
+}
+.fa-snapchat-ghost:hover{
+  color: yellow;
+}
+
+.danger {
+    font-size: x-small;
+    text-align: -webkit-auto;
+    padding: 0px 0px 10px;
+}
+input[type="text"] {
+    /* color: white; */
+    height: 30px;
+    width: 185px;
+    float: left;
+    background-color: #000;
+    margin: 0px;
+    /* background: transparent; */
+    border: 0px;
+    padding: 10px;
+}
+/*======footer logo=====*/
+.footer_logo{
+  background-color: #1b1b1b;
+  height: 100px;
+  color: #caac76;
+  text-align: center;
+}
+
+.footer_logo h1:after {
+    content: '';
+
+    height: 3px;
+    width: 528px;
+
+    background: #ff0000;
+      }
+
+/*=====line======*/
+
+.vl {
+    border-left: 790px solid #caac76;
+    border-right: 790px solid #caac76;
+    height: 4px;
+    /* position: absolute; */
+    /* left: 59%; */
+    /* margin-left: 0px; */
+    /* top: 65px; */
+}
+
+
+/*===========Footer Starts==========*/
