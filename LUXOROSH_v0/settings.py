@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'LUXOROSH_Homepage',
+    'widget_tweaks',#pip install django-widget-tweaks ,is  a third party app to add class to the form field in html template
+    'user',
+
 ]
 
 MIDDLEWARE = [
@@ -119,8 +122,16 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+'''
+python manage.py collectstatic
+This will copy all files from your static folders into the STATIC_ROOT directory
 
+'''
 STATIC_URL = '/static/'
+MEDIA_URL ='/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static','static_dir'),
 ]
+LOGIN_URL ='user:login' #log in redirect url
+LOGOUT_URL='user:logout'
