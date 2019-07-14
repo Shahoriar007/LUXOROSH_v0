@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'LUXOROSH_Homepage',
     'widget_tweaks',#pip install django-widget-tweaks ,is  a third party app to add class to the form field in html template
     'user',
+    'product',
 
 ]
 
